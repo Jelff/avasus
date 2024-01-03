@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  height: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.logo {
+  margin-left: 70px;
+}
+
+.logo img {
+  max-height: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.nav button {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2F2E41;
+}
+
+.nav button.active {
+  font-weight: normal;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px;
+  width: 270px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.search-img {
+  height: 13px;
+  padding-top: 2px;
+}
+
+.search-input {
+  background-color: transparent;
+}
+
+.search-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  width: 150px;
+}
+
+.auth-search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.auth button {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+.signup-btn {
+  background-color: #707070;
+  color: #fff;
+}

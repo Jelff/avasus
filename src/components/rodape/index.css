@@ -1,0 +1,103 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-align: start;
+    
+    
+  }
+  
+  .footer-section {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .footer-small p {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .rodape-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .lais-img {
+    margin-right: 50px;
+    height: 60px;
+  }
+
+  .ufrn-img {
+    height: 60px;
+  }
+
+  .footer-medium {
+    height: 160px;
+    background-color: #D2202C;
+  }
+  
+  .footer-large {
+    height: 200px;
+    background-color: #323237;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+
+    flex-direction: row;
+  }
+  
+  .footer-small {
+    height: 100px;
+    background-color: #424146;
+  }
+
+  .lista {
+    list-style: none;
+    padding: 0; 
+  }
+
+  .links-uteis p {
+    font-weight: 600;
+    text-align: start;
+  }
+  
+  .lista li {
+    
+    margin-bottom: 8px; 
+  }
+
+  .social-imgs {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+
+  }
+
+  .social-imgs div {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+  }
+
+  .social-imgs img {
+    height: 15px;
+  }
+
+  .lais-discription p {
+    font-size: 10px;
+  }
+
+  .lais-img {
+    margin-bottom: -10px;
+    height: 20px;
+  }
