@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 const Header: React.FC = () => {
   return (
     <header className="header">
-      <Link to="/historia1">
+      <Link to="/inicio">
         <div className="logo">
           <img className="logo-img" src="/Avasus-logo.png" alt="Logo" />
         </div>
       </Link>
       <nav className="nav">
-        <Link to="/historia1">
+        <Link to="/inicio">
           <button className="active">Início</button>
         </Link>
-        <Link to="/historia2">
+        <Link to="/">
           <button>Sobre Nós</button>
         </Link>
         <Link to="/">
           <button>Cursos</button>
         </Link>
-        <Link to="/">
+        <Link to="/parceiros">
           <button>Parceiros</button>
         </Link>
-        <Link to="/">
+        <Link to="/transparencia">
           <button>Transparência</button>
         </Link>
-        <Link to="/">
+        <Link to="/contato">
           <button>Contato</button>
         </Link>
       </nav>
@@ -42,10 +42,10 @@ const Header: React.FC = () => {
           />
         </div>
         <div className="auth">
+      </div>
           <button className="login-btn">Entrar</button>
           <button className="signup-btn">Cadastrar</button>
         </div>
-      </div>
     </header>
   );
 };

@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="footer-section footer-large">
-        <div className="lais-deescription">
-          <img className="lais-img" src="/lais.png" alt="lais" />
+        <div className="lais-description">
+          <img className="lais-img-description" src="/lais.png" alt="lais" />
           <p>
             Laboratório de Inovação
             <br /> Tecnológica em Saúde.

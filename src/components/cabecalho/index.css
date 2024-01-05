@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f0f0f0;
-  height: 50px;
+  background-color: #fff;
+  height: 45px;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -79,7 +79,7 @@
 
 .auth button {
   border: 1px solid #ccc;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
   margin-right: 10px;
@@ -90,9 +90,93 @@
 .login-btn {
   background-color: #fff;
   color: #333;
+  margin-right: 10px;
+  width: 80px;
+  height: 25px;
+  border-radius: 15px;
+  border: 1px solid #666666;
 }
 
 .signup-btn {
   background-color: #707070;
   color: #fff;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
+  border: 1px solid #666666;
 }
+
+@media (max-width: 1400px) {
+  .header {
+    flex-direction: column;
+    height: 160px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 499px) {
+  .logo img {
+    padding-right: 90px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo img {
+    margin-right: 60px;
+  }
+}
+
+
+
+@media (max-width: 1400px) {
+  .auth {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth button {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .nav {
+    margin: 0 0 0 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1400px) {
+  .search {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-search-container {
+    margin: 0;
+  }
+}
+

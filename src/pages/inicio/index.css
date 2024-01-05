@@ -1,0 +1,32 @@
+.inicio-body {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.inicio-body img {
+  width: 100%;
+  height: auto;
+}
+
+.modulos-educacionais {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.modulos-educacionais nav {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.modulo {
+  display: flex;
+  background-color:red;
+}
