@@ -13,15 +13,15 @@ export default function Inicio() {
         />
       </div>
       <div className="modulos-educacionais">
-        <h1>Módulos Educacionais</h1>
+        <h2>Módulos Educacionais</h2>
         <nav>
-          <div>
+          <div className="modulo-menu">
             <button>Mais populares</button>
           </div>
-          <div>
+          <div className="modulo-menu">
             <button>Mais bem avaliados</button>
           </div>
-          <div>
+          <div className="modulo-menu">
             <button>Mais recentes</button>
           </div>
         </nav>
@@ -29,27 +29,89 @@ export default function Inicio() {
           <div className="modulo">
             <img src="/clinic-aspects.png" alt=""></img>
             <div className="text-modulo">
-              <p>Sífilis: Aspectos Clínicos e Diagnóstico Diferencial</p>
-              <h4>LAIS / EBSSERH</h4>
+              <h4>
+                Sífilis: Aspectos Clínicos e<br /> Diagnóstico Diferencial
+              </h4>
+              <p>LAIS / EBSSERH</p>
+            </div>
+            <div className="inside-module">
+              <img className="users-icon" src="users-icon.png" alt=""></img>
+              <p>27.645</p>
+              <img className="timer-icon" src="timer-icon.png" alt=""></img>
+              <p>4h30min</p>
+              <img className="5stars-icon" src="5stars.png" alt=""></img>
+              <p>5,0</p>
+              <button>Ver módulo</button>
             </div>
           </div>
           <div className="modulo">
             <img src="/book-sifilis.png" alt=""></img>
             <div className="text-modulo">
-              <p>Sífilis: Aspectos Clínicos e Diagnóstico Diferencial</p>
-              <h4>UFRN / SEDIS / LAIS / EBSERH</h4>
+              <h4>
+                Sífilis: Aspectos Clínicos e<br /> Diagnóstico Diferencial
+              </h4>
+              <p>UFRN / SEDIS / LAIS / EBSERH</p>
+            </div>
+            <div className="inside-module">
+              <img className="users-icon" src="users-icon.png" alt=""></img>
+              <p>27.645</p>
+              <img className="timer-icon" src="timer-icon.png" alt=""></img>
+              <p>4h30min</p>
+              <img className="5stars-icon" src="5stars.png" alt=""></img>
+              <p>5,0</p>
+              <button>Ver módulo</button>
             </div>
           </div>
           <div className="modulo">
-              <img src="/dentist.png" alt=""></img>
+            <img src="/dentist.png" alt=""></img>
             <div className="text-modulo">
-              <p>Políticas de atenção à saúde no sistema prisional</p>
-              <h4>UFRN / LAIS / SEDIS / HUOL / EBSERH / UC / MS</h4>
+              <h4>
+                Políticas de atenção à<br /> saúde no sistema prisional
+              </h4>
+              <p>
+                UFRN / LAIS / SEDIS / HUOL /<br /> EBSERH / UC / MS
+              </p>
+            </div>
+            <div className="inside-module">
+              <img className="users-icon" src="users-icon.png" alt=""></img>
+              <p>27.645</p>
+              <img className="timer-icon" src="timer-icon.png" alt=""></img>
+              <p>4h30min</p>
+              <img className="5stars-icon" src="5stars.png" alt=""></img>
+              <p>5,0</p>
+              <button>Ver módulo</button>
             </div>
           </div>
-          <button>Ver mais</button>
+          <div className="vermais-btn">
+            <button>Ver mais</button>
+          </div>
         </div>
       </div>
+      <div className="parceiros">
+        <h2>Parceiros</h2>
+        <div className="container">
+          <div className="parceiro">
+            <h2>Governo do RN</h2>
+            <p>Governo do Estado do Rio Grande do Norte.</p>
+          </div>
+          <div className="parceiro">
+            <h2>SESAP</h2>
+            <p>Secretaria de Saúde Pública do Estado do Rio Grande do Norte.</p>
+          </div>
+          <div className="parceiro">
+            <h2>UFRN</h2>
+            <p>Universidade Federal do Rio Grande do Norte.</p>
+          </div>
+          <div className="parceiro">
+            <h2>HUOL</h2>
+            <p>
+              Hospital Onofre Lopes: Hospital Universitário da UFRN
+              (Universidade Federal do Rio Grande do Norte).{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+
       <Rodape />
     </>
   );
