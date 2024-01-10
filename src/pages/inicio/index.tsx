@@ -106,7 +106,7 @@ export default function Inicio() {
             <h2>HUOL</h2>
             <p>
               Hospital Onofre Lopes: Hospital Universitário da UFRN
-              (Universidade Federal do Rio Grande do Norte).{" "}
+              (Universidade Federal do Rio Grande do Norte).
             </p>
           </div>
         </div>

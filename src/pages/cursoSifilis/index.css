@@ -1,0 +1,104 @@
+.bg-img-container {
+  position: relative;
+  height: 100vh; /* 100% da altura da viewport */
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o contêiner mantendo a proporção */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Cor do texto */
+}
+
+.overlay-text h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1.2em;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.infos-gerais {
+  display: flex;
+  align-items: center;
+  padding: 0px 0 15px 20px;
+}
+
+.infos-gerais p {
+  margin: 0 24px 0 10px;
+  font-weight: bold;
+}
+
+.titulo-curso {
+  margin-left: 625px;
+}
+
+.titulo-curso {
+  color: #d2202c;
+}
+
+.sobre-curso {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 790px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.sobre-objetivo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 811px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.sobre-texto p {
+  color: #000;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.objetivos-ge {
+  color: #000;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.objetivos-ge  li {
+  color: #000;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+.sobre-recursos {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 811px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+

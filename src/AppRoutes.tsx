@@ -2,9 +2,10 @@ import { BrowserRouter,Routes, Route } from "react-router-dom";
 import Inicio from "./pages/inicio";
 import Historia2 from "./pages/historia2";
 import Historia3 from "./pages/historia3";
-import Parceiros from "./pages/transparencia";
+import Parceiros from "./pages/parceiros";
 import Transparencia from "./pages/transparencia";
 import Contato from "./pages/contato";
+import CursoSifilis from "./pages/cursoSifilis"
 
 function AppRoutes() {
     return (
@@ -16,6 +17,7 @@ function AppRoutes() {
             <Route path="/transparencia" element={ <Transparencia /> } />
             <Route path="/contato" element={ <Contato /> } />
             <Route path="/parceiros" element={ <Parceiros /> } />
+            <Route path="/cursoSifilis" element={ <CursoSifilis /> } />
         </Routes>
         </BrowserRouter>
     )

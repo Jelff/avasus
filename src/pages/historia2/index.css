@@ -1,0 +1,104 @@
+.pageContainer {
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.pageTitle {
+  font-size: 40px;
+  color: #d2202c;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.pageNav {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.pageNav label {
+  font-weight: 600;
+  color: #707070;
+}
+
+.pageNav hr {
+  border-top: 3px solid;
+}
+.pageCounter {
+  color: #2f2e41;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.module {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.moduleImage {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.moduleTitle {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.moduleAuthor {
+  font-size: 10px;
+  color: #f6303f;
+}
+
+.moduleSpecs {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.moduleSpecs img {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.moduleSpecs label {
+  font-size: 13px;
+}
+
+.moduleDescription {
+  font-size: 12px;
+}
+
+.pageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.starRow {
+  display: flex;
+  gap: 8px;
+}
+
+.avaliacao {
+  display: flex;
+  gap: 8px;
+}
+
+.specs1 {
+  display: flex;
+  gap: 8px;
+}
+
+.itemBarClass {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 200px;
+}

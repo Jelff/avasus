@@ -10,3 +10,7 @@ body,
   font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
 }
+
+.container-principal {
+  margin: 0 260px 0 260px;
+}
