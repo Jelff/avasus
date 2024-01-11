@@ -1,6 +1,5 @@
-import Cabecalho from "../../components/cabecalho";
-import Rodape from "../../components/rodape";
-import "./index.css";
+import Cabecalho from "../components/cabecalho";
+import Rodape from "../components/rodape";
 import { useState, useEffect } from "react";
 
 interface dataType {
@@ -20,7 +19,7 @@ interface dataType {
   creditos: string[];
 }
 
-export default function Historia2() {
+export default function Cursos() {
   const [data, setData] = useState<dataType[]>([]);
 
   useEffect(() => {

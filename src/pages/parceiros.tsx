@@ -1,6 +1,5 @@
-import Cabecalho from "../../components/cabecalho";
-import Rodape from "../../components/rodape";
-import "./index.css";
+import Cabecalho from "../components/cabecalho";
+import Rodape from "../components/rodape";
 import { useState, useEffect } from "react";
 
 interface Parceiro {
@@ -21,7 +20,7 @@ export default function Parceiros() {
     <>
       <Cabecalho />
 
-      <div>
+      <div className="pageContainer">
         <div className="parceiros1-titulo">
           <p className="parceiros1-p">
             Início <b>/ Parceiros</b>

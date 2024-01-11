@@ -1,12 +1,12 @@
-import Cabecalho from "../../components/cabecalho";
-import Rodape from "../../components/rodape";
-import "./index.css";
+import Cabecalho from "../components/cabecalho";
+import Rodape from "../components/rodape";
+
 
 export default function Transparencia() {
   return (
     <>
       <Cabecalho />
-      <div className="container-principal transparencia">
+      <div className="pageContainer transparencia">
         <div>
           <p>
             Inicio <b>/ Transparencia</b>

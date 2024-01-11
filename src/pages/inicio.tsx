@@ -1,6 +1,6 @@
-import Cabecalho from "../../components/cabecalho";
-import Rodape from "../../components/rodape";
-import "./index.css";
+import Cabecalho from "../components/cabecalho";
+import Rodape from "../components/rodape";
+
 
 export default function Inicio() {
   return (
@@ -11,8 +11,11 @@ export default function Inicio() {
           src="/avasus-mulher.png"
           alt="uma mulher loira de pele branca sorrindo"
         />
+        <div className="buttons-caroussel">
+        <img src="/buttons-carousel.png" alt=""></img>
+        </div>
       </div>
-      <div className="modulos-educacionais">
+      <div className="pageContainer modulos-educacionais">
         <h2>Módulos Educacionais</h2>
         <nav>
           <div className="modulo-menu">

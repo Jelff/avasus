@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
@@ -14,10 +13,8 @@ const Header: React.FC = () => {
         <Link to="/inicio">
           <button className="active">Início</button>
         </Link>
-        <Link to="/">
           <button>Sobre Nós</button>
-        </Link>
-        <Link to="/historia2">
+        <Link to="/cursos">
           <button>Cursos</button>
         </Link>
         <Link to="/parceiros">
@@ -25,10 +22,8 @@ const Header: React.FC = () => {
         </Link>
         <Link to="/transparencia">
           <button>Transparência</button>
-        </Link>
-        <Link to="/contato">
+        </Link> 
           <button>Contato</button>
-        </Link>
       </nav>
       <div className="auth-search-container">
         <div className="search">
