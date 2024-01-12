@@ -1,6 +1,6 @@
 import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
-
+import { Link } from "react-router-dom";
 
 export default function Inicio() {
   return (
@@ -11,82 +11,95 @@ export default function Inicio() {
           src="/avasus-mulher.png"
           alt="uma mulher loira de pele branca sorrindo"
         />
+        <div className="arrows">
+          <img className="arrow" src="/arrowleft.png" alt=""></img>
+          <img className="arrow" src="/arrowright.png" alt=""></img>
+        </div>
         <div className="buttons-caroussel">
-        <img src="/buttons-carousel.png" alt=""></img>
+          <img src="/buttons-carousel.png" alt=""></img>
         </div>
       </div>
-      <div className="pageContainer modulos-educacionais">
-        <h2>Módulos Educacionais</h2>
-        <nav>
-          <div className="modulo-menu">
-            <button>Mais populares</button>
-          </div>
-          <div className="modulo-menu">
-            <button>Mais bem avaliados</button>
-          </div>
-          <div className="modulo-menu">
-            <button>Mais recentes</button>
-          </div>
-        </nav>
-        <div className="modulos">
-          <div className="modulo">
-            <img src="/clinic-aspects.png" alt=""></img>
-            <div className="text-modulo">
-              <h4>
-                Sífilis: Aspectos Clínicos e<br /> Diagnóstico Diferencial
-              </h4>
-              <p>LAIS / EBSSERH</p>
+      <div className="modulos-alinhados">
+        <div className="pageContainer modulos-educacionais">
+          <h2>Módulos Educacionais</h2>
+          <nav>
+            <div className="modulo-menu">
+              <button>Mais populares</button>
+              <hr></hr>
             </div>
-            <div className="inside-module">
-              <img className="users-icon" src="users-icon.png" alt=""></img>
-              <p>27.645</p>
-              <img className="timer-icon" src="timer-icon.png" alt=""></img>
-              <p>4h30min</p>
-              <img className="5stars-icon" src="5stars.png" alt=""></img>
-              <p>5,0</p>
-              <button>Ver módulo</button>
+            <div className="modulo-menu">
+              <button>Mais bem avaliados</button>
             </div>
-          </div>
-          <div className="modulo">
-            <img src="/book-sifilis.png" alt=""></img>
-            <div className="text-modulo">
-              <h4>
-                Sífilis: Aspectos Clínicos e<br /> Diagnóstico Diferencial
-              </h4>
-              <p>UFRN / SEDIS / LAIS / EBSERH</p>
+            <div className="modulo-menu">
+              <button>Mais recentes</button>
             </div>
-            <div className="inside-module">
-              <img className="users-icon" src="users-icon.png" alt=""></img>
-              <p>27.645</p>
-              <img className="timer-icon" src="timer-icon.png" alt=""></img>
-              <p>4h30min</p>
-              <img className="5stars-icon" src="5stars.png" alt=""></img>
-              <p>5,0</p>
-              <button>Ver módulo</button>
+          </nav>
+          <div className="modulos">
+            <div className="modulo">
+              <Link to="/cursoSifilis">
+                <img src="/clinic-aspects.png" alt=""></img>
+              </Link>
+              <div className="text-modulo">
+                <h4>
+                  Sífilis: Aspectos Clínicos e<br /> Diagnóstico Diferencial
+                </h4>
+                <p>LAIS / EBSSERH</p>
+              </div>
+              <div className="inside-module">
+                <img className="users-icon" src="users-icon.png" alt=""></img>
+                <p>27.645</p>
+                <img className="timer-icon" src="timer-icon.png" alt=""></img>
+                <p>4h30min</p>
+                <img className="5stars-icon" src="5stars.png" alt=""></img>
+                <p>5,0</p>
+                <Link to="/cursoSifilis">
+                  <button>Ver módulo</button>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="modulo">
-            <img src="/dentist.png" alt=""></img>
-            <div className="text-modulo">
-              <h4>
-                Políticas de atenção à<br /> saúde no sistema prisional
-              </h4>
-              <p>
-                UFRN / LAIS / SEDIS / HUOL /<br /> EBSERH / UC / MS
-              </p>
+            <div className="modulo">
+              <img src="/book-sifilis.png" alt=""></img>
+              <div className="text-modulo">
+                <h4>
+                  Sífilis: Aspectos Clínicos e<br /> Diagnóstico Diferencial
+                </h4>
+                <p>UFRN / SEDIS / LAIS / EBSERH</p>
+              </div>
+              <div className="inside-module">
+                <img className="users-icon" src="users-icon.png" alt=""></img>
+                <p>27.645</p>
+                <img className="timer-icon" src="timer-icon.png" alt=""></img>
+                <p>4h30min</p>
+                <img className="5stars-icon" src="5stars.png" alt=""></img>
+                <p>5,0</p>
+                <button>Ver módulo</button>
+              </div>
             </div>
-            <div className="inside-module">
-              <img className="users-icon" src="users-icon.png" alt=""></img>
-              <p>27.645</p>
-              <img className="timer-icon" src="timer-icon.png" alt=""></img>
-              <p>4h30min</p>
-              <img className="5stars-icon" src="5stars.png" alt=""></img>
-              <p>5,0</p>
-              <button>Ver módulo</button>
+            <div className="modulo">
+              <img src="/dentist.png" alt=""></img>
+              <div className="text-modulo">
+                <h4>
+                  Políticas de atenção à<br /> saúde no sistema prisional
+                </h4>
+                <p>
+                  UFRN / LAIS / SEDIS / HUOL /<br /> EBSERH / UC / MS
+                </p>
+              </div>
+              <div className="inside-module">
+                <img className="users-icon" src="users-icon.png" alt=""></img>
+                <p>27.645</p>
+                <img className="timer-icon" src="timer-icon.png" alt=""></img>
+                <p>4h30min</p>
+                <img className="5stars-icon" src="5stars.png" alt=""></img>
+                <p>5,0</p>
+                <button>Ver módulo</button>
+              </div>
             </div>
-          </div>
-          <div className="vermais-btn">
-            <button>Ver mais</button>
+            <div className="vermais-btn">
+              <Link to="/cursos">
+                <button>Ver mais</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

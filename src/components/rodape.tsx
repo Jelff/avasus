@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-section footer-medium">
@@ -21,11 +22,19 @@ const Footer: React.FC = () => {
         <div className="links-uteis">
           <p>Links Úteis</p>
           <ul className="lista">
-            <li>Início</li>
-            <li>Sobre Nós</li>
-            <li>Módulos</li>
-            <li>Parceiros</li>
-            <li>Transparência</li>
+            <Link to="/inicio">
+              <li>Início</li>
+            </Link>
+              <li>Sobre Nós</li> 
+            <Link to="/cursos">
+              <li>Módulos</li>
+            </Link>
+            <Link to="/parceiros">
+              <li>Parceiros</li>
+            </Link>
+            <Link to="/transparencia">
+              <li>Transparência</li>
+            </Link>
           </ul>
         </div>
         <div className="social-imgs">
@@ -54,6 +63,4 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,6 +1,7 @@
 import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 interface dataType {
   id: number;
@@ -52,71 +53,78 @@ export default function Cursos() {
         <div className="pageGrid">
           {data.slice(3, 9).map((index) => (
             <div className="module">
-              <img className="moduleImage" src={index.capa} alt="" />
-              <b className="moduleTitle">{index.titulo}</b>
-              <b className="moduleAuthor">{index.parceiros}</b>
-              <div className="moduleSpecs">
-                <div className="specs1">
-                  <img src="/users-icon.png" alt="" />
-                  <label>{index.matriculados}</label>
-                  <img src="/timer-icon.png" alt="" />
-                  <label>{index.duracao}</label>
+              <Link to="/cursoSifilis">
+                <img className="moduleImage" src={index.capa} alt="" />
+              </Link>
+                <b className="moduleTitle">{index.titulo}</b>
+                <b className="moduleAuthor">{index.parceiros}</b>
+                <div className="moduleSpecs">
+                  <div className="specs1">
+                    <img src="/users-icon.png" alt="" />
+                    <label>{index.matriculados}</label>
+                    <img src="/timer-icon.png" alt="" />
+                    <label>{index.duracao}</label>
+                  </div>
+                  <div className="starRow">
+                    <img
+                      src={
+                        Number(index.avaliacao) < 0.5
+                          ? "/emptystar.svg"
+                          : Number(index.avaliacao) < 1.0
+                          ? "/halfstar.svg"
+                          : "/fullstar.svg"
+                      }
+                      alt=""
+                    />
+                    <img
+                      src={
+                        Number(index.avaliacao) < 1.5
+                          ? "/emptystar.svg"
+                          : Number(index.avaliacao) < 2.0
+                          ? "/halfstar.svg"
+                          : "/fullstar.svg"
+                      }
+                      alt=""
+                    />
+                    <img
+                      src={
+                        Number(index.avaliacao) < 2.5
+                          ? "/emptystar.svg"
+                          : Number(index.avaliacao) < 3.0
+                          ? "/halfstar.svg"
+                          : "/fullstar.svg"
+                      }
+                      alt=""
+                    />
+                    <img
+                      src={
+                        Number(index.avaliacao) < 3.5
+                          ? "/emptystar.svg"
+                          : Number(index.avaliacao) < 4.0
+                          ? "/halfstar.svg"
+                          : "/fullstar.svg"
+                      }
+                      alt=""
+                    />
+                    <img
+                      src={
+                        Number(index.avaliacao) < 4.5
+                          ? "/emptystar.svg"
+                          : Number(index.avaliacao) < 0.5
+                          ? "/halfstar.svg"
+                          : "/fullstar.svg"
+                      }
+                      alt=""
+                    />
+                    <label>{index.avaliacao}</label>
+                  </div>
                 </div>
-                <div className="starRow">
-                  <img
-                    src={
-                      Number(index.avaliacao) < 0.5
-                        ? "/emptystar.svg"
-                        : Number(index.avaliacao) < 1.0
-                        ? "/halfstar.svg"
-                        : "/fullstar.svg"
-                    }
-                    alt=""
-                  />
-                  <img
-                    src={
-                      Number(index.avaliacao) < 1.5
-                        ? "/emptystar.svg"
-                        : Number(index.avaliacao) < 2.0
-                        ? "/halfstar.svg"
-                        : "/fullstar.svg"
-                    }
-                    alt=""
-                  />
-                  <img
-                    src={
-                      Number(index.avaliacao) < 2.5
-                        ? "/emptystar.svg"
-                        : Number(index.avaliacao) < 3.0
-                        ? "/halfstar.svg"
-                        : "/fullstar.svg"
-                    }
-                    alt=""
-                  />
-                  <img
-                    src={
-                      Number(index.avaliacao) < 3.5
-                        ? "/emptystar.svg"
-                        : Number(index.avaliacao) < 4.0
-                        ? "/halfstar.svg"
-                        : "/fullstar.svg"
-                    }
-                    alt=""
-                  />
-                  <img
-                    src={
-                      Number(index.avaliacao) < 4.5
-                        ? "/emptystar.svg"
-                        : Number(index.avaliacao) < 0.5
-                        ? "/halfstar.svg"
-                        : "/fullstar.svg"
-                    }
-                    alt=""
-                  />
-                  <label>{index.avaliacao}</label>
+                <label className="moduleDescription">{index.resumo}</label>
+                <div className="cursos-btn">
+                  <Link to="/cursoSifilis">
+                    <button>Ver curso</button>
+                  </Link>
                 </div>
-              </div>
-              <label className="moduleDescription">{index.resumo}</label>
             </div>
           ))}
         </div>
