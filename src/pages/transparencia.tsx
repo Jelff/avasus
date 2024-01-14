@@ -1,5 +1,3 @@
-import Cabecalho from "../components/cabecalho";
-import Rodape from "../components/rodape";
 import { useState, useEffect } from "react";
 
 interface transparencia {
@@ -38,10 +36,9 @@ export default function Transparencia() {
   }, []);
   return (
     <>
-      <Cabecalho />
       <div className="pageContainer transparenciaContainer">
         <div>
-          <p>
+          <p className="transparencia-p">
             Inicio <b>/ Transparência</b>
           </p>
           <p className="pageTitle">Transparência</p>
@@ -169,7 +166,6 @@ export default function Transparencia() {
           </div>
         </div>
       </div>
-      <Rodape />
     </>
   );
 }

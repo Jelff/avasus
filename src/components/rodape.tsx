@@ -22,17 +22,29 @@ export default function Footer() {
         <div className="links-uteis">
           <p>Links Úteis</p>
           <ul className="lista">
-            <Link to="/inicio">
+            <Link
+              to="/inicio"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <li>Início</li>
             </Link>
-              <li>Sobre Nós</li> 
-            <Link to="/cursos">
+            <li>Sobre Nós</li>
+            <Link
+              to="/cursos"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <li>Módulos</li>
             </Link>
-            <Link to="/parceiros">
+            <Link
+              to="/parceiros"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <li>Parceiros</li>
             </Link>
-            <Link to="/transparencia">
+            <Link
+              to="/transparencia"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <li>Transparência</li>
             </Link>
           </ul>

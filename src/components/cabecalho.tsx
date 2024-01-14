@@ -1,7 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
+
+  const location = useLocation();
+
+  const isNavLinkActive = (path: string) => {
+    return location.pathname === path;
+  };
+
   return (
     <header className="header">
       <Link to="/inicio">
@@ -11,17 +18,17 @@ const Header: React.FC = () => {
       </Link>
       <nav className="nav">
         <Link to="/inicio">
-          <button className="active">Início</button>
+          <button className={isNavLinkActive("/inicio") ? "active" : ""}>Início</button>
         </Link>
           <button>Sobre Nós</button>
         <Link to="/cursos">
-          <button>Cursos</button>
+          <button className={isNavLinkActive("/cursos") ? "active" : ""}>Cursos</button>
         </Link>
         <Link to="/parceiros">
-          <button>Parceiros</button>
+          <button className={isNavLinkActive("/parceiros") ? "active" : ""}>Parceiros</button>
         </Link>
         <Link to="/transparencia">
-          <button>Transparência</button>
+          <button className={isNavLinkActive("/transparencia") ? "active" : ""}>Transparência</button>
         </Link> 
           <button>Contato</button>
       </nav>

@@ -1,11 +1,10 @@
-import Cabecalho from "../components/cabecalho";
-import Rodape from "../components/rodape";
 import { Link } from "react-router-dom";
 
+
 export default function Inicio() {
+
   return (
     <>
-      <Cabecalho />
       <div className="inicio-body">
         <img
           src="/avasus-mulher.png"
@@ -67,11 +66,11 @@ export default function Inicio() {
               </div>
               <div className="inside-module">
                 <img className="users-icon" src="users-icon.png" alt=""></img>
-                <p>27.645</p>
+                <p>12.645</p>
                 <img className="timer-icon" src="timer-icon.png" alt=""></img>
                 <p>4h30min</p>
-                <img className="5stars-icon" src="5stars.png" alt=""></img>
-                <p>5,0</p>
+                <img className="5stars-icon" src="4stars.png" alt=""></img>
+                <p>4,0</p>
                 <button>Ver módulo</button>
               </div>
             </div>
@@ -87,11 +86,11 @@ export default function Inicio() {
               </div>
               <div className="inside-module">
                 <img className="users-icon" src="users-icon.png" alt=""></img>
-                <p>27.645</p>
+                <p>9.654</p>
                 <img className="timer-icon" src="timer-icon.png" alt=""></img>
-                <p>4h30min</p>
-                <img className="5stars-icon" src="5stars.png" alt=""></img>
-                <p>5,0</p>
+                <p>5h30min</p>
+                <img className="5stars-icon" src="4-5stars.png" alt=""></img>
+                <p>4,5</p>
                 <button>Ver módulo</button>
               </div>
             </div>
@@ -105,7 +104,7 @@ export default function Inicio() {
       </div>
       <div className="parceiros">
         <h2>Parceiros</h2>
-        <div className="container">
+        <div className="pageContainer container">
           <div className="parceiro">
             <h2>Governo do RN</h2>
             <p>Governo do Estado do Rio Grande do Norte.</p>
@@ -127,8 +126,6 @@ export default function Inicio() {
           </div>
         </div>
       </div>
-
-      <Rodape />
     </>
   );
 }
