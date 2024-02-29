@@ -1,6 +1,9 @@
 # avasus
 Front-end do Sistema Avasus
 
+#Intuito do projeto: 
+Este projeto foi desenvolvido para um teste da segunda etapa de um Edital disponibilizado pelo Laís (Laboratório de Inovação Tecnológica em Saúde).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
